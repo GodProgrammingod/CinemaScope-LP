@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing Page fictícia de uma empresa voltada ao cinema">
+    <title>CinemaScope</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>CinemaScope</h1>
+            <p>Explorando o mundo do cinema com criatividade e paixão.</p>
+            <a href="#about" class="btn-primary">Saiba Mais</a>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>Sobre</h2>
+            <p>A CinemaScope é uma empresa fictícia especializada em produção cinematográfica, organização de festivais e criação de conteúdo audiovisual. Inspiramos emoções e contamos histórias inesquecíveis.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projetos</h2>
+            <div class="project-list">
+                <div class="project-item">
+                    <img src="img/1.png" alt="Festival de Curtas">
+                    <h3>Festival de Curtas</h3>
+                    <p>Organizamos anualmente o Festival de Curtas CinemaScope, promovendo talentos emergentes.</p>
+                </div>
+                <div class="project-item">
+                    <img src="img/2.png" alt="Produção de Documentários">
+                    <h3>Produção de Documentários</h3>
+                    <p>Produzimos documentários que exploram temas culturais, sociais e históricos.</p>
+                </div>
+                <div class="project-item">
+                    <img src="img/3.png" alt="Conteúdo Comercial">
+                    <h3>Conteúdo Comercial</h3>
+                    <p>Trabalhamos com empresas para criar conteúdos comerciais impactantes e memoráveis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contato</h2>
+            <form action="#" method="POST">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 CinemaScope. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

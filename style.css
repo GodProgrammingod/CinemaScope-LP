@@ -1,0 +1,212 @@
+/* style.css */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: linear-gradient(to bottom, #f9f9f9, #e9ecef);
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#about p {
+    text-align: justify;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header.hero {
+    background: url(img/banner.png) no-repeat center center/cover;
+    color: #fff;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+header.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+header.hero h1 {
+    font-size: 3rem;
+    margin: 0;
+    z-index: 2;
+    position: relative;
+}
+
+header.hero p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    z-index: 2;
+    position: relative;
+}
+
+header.hero .btn-primary {
+    background: #e50914;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 2;
+    position: relative;
+}
+
+header.hero .btn-primary:hover {
+    background: #ff5f5f;
+}
+
+nav {
+    background: #444;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #e50914;
+}
+
+.section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.section h2 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.project-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    background: #fff;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza o movimento e sombra */
+}
+
+.project-item:hover {
+    transform: translateY(-10px); /* Move levemente para cima */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao passar o mouse */
+}
+
+.project-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.project-item h3 {
+    margin-top: 15px;
+    color: #e50914;
+}
+
+form {
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form label {
+    font-weight: bold;
+    color: #444;
+    display: block;
+    margin-bottom: 5px;
+    text-align: left; /* Alinha os rótulos à esquerda */
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box; /* Inclui padding na largura */
+}
+
+form textarea {
+    resize: none; /* Remove o redimensionamento */
+    height: 150px; /* Define uma altura fixa */
+    border-color: #eee; /* Cor da borda */
+}
+
+form textarea:focus,
+form input:focus {
+    outline: none;
+    border-color: #ccc; /* Cor da borda ao focar */
+}
+
+form button {
+    background: #e50914;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+form button:hover {
+    background: #ff5f5f;
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: #333;
+    color: #fff;
+}
+
+footer p {
+    margin: 0;
+}
